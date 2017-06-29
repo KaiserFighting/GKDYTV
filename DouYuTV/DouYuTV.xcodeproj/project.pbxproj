@@ -15,6 +15,7 @@
 		A96F0ACC1F04A52900B39BB0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F0AC91F04A52900B39BB0 /* MainViewController.swift */; };
 		A96F0ADA1F04A97200B39BB0 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F0AD91F04A97200B39BB0 /* HomeViewController.swift */; };
 		A96F0ADD1F04AA9900B39BB0 /* UIBarButtonItem+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F0ADC1F04AA9900B39BB0 /* UIBarButtonItem+Extention.swift */; };
+		A96F0ADF1F04D8BE00B39BB0 /* UIColor+extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96F0ADE1F04D8BE00B39BB0 /* UIColor+extention.swift */; };
 		A9C33EA91F03FD0800F0182A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C33EA81F03FD0800F0182A /* Home.storyboard */; };
 		A9C33EAB1F03FD2000F0182A /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C33EAA1F03FD2000F0182A /* Live.storyboard */; };
 		A9C33EAD1F03FD2B00F0182A /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C33EAC1F03FD2B00F0182A /* Profile.storyboard */; };
@@ -31,6 +32,7 @@
 		A96F0AC91F04A52900B39BB0 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A96F0AD91F04A97200B39BB0 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A96F0ADC1F04AA9900B39BB0 /* UIBarButtonItem+Extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extention.swift"; sourceTree = "<group>"; };
+		A96F0ADE1F04D8BE00B39BB0 /* UIColor+extention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIColor+extention.swift"; path = "../UIColor+extention.swift"; sourceTree = "<group>"; };
 		A9C33EA81F03FD0800F0182A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = ../Home.storyboard; sourceTree = "<group>"; };
 		A9C33EAA1F03FD2000F0182A /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../Live.storyboard; sourceTree = "<group>"; };
 		A9C33EAC1F03FD2B00F0182A /* Profile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Profile.storyboard; path = ../Profile.storyboard; sourceTree = "<group>"; };
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				A96F0ADC1F04AA9900B39BB0 /* UIBarButtonItem+Extention.swift */,
+				A96F0ADE1F04D8BE00B39BB0 /* UIColor+extention.swift */,
 			);
 			path = Extention;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A96F0ADF1F04D8BE00B39BB0 /* UIColor+extention.swift in Sources */,
 				A910580C1F01477E0079319F /* AppDelegate.swift in Sources */,
 				A96F0ADD1F04AA9900B39BB0 /* UIBarButtonItem+Extention.swift in Sources */,
 				A96F0ACC1F04A52900B39BB0 /* MainViewController.swift in Sources */,

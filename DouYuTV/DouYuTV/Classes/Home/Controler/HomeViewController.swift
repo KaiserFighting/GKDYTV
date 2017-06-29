@@ -22,11 +22,12 @@ class HomeViewController: UIViewController {
 extension HomeViewController {
     
     fileprivate func setupUI(){
+        view.backgroundColor = UIColor.random()
+        
         //1.设置导航栏
         setupNavitionBar()
 
     }
-    
     
     fileprivate func setupNavitionBar(){
         
