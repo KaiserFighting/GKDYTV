@@ -8,8 +8,6 @@
 
 import UIKit
 
-private let kTitleH : CGFloat = 60
-
 class HomeViewController: UIViewController {
 
     //懒加载title
@@ -22,17 +20,21 @@ class HomeViewController: UIViewController {
        return titleView
     }()
     //懒加载内容
-    private lazy var pageContentView : PageContentView = {[weak self] in
+    private lazy var pageContentView : PageContentView = { [weak self] in
+        
+        let contentFrame = CGRect(x: 0, y: KNavgationHeight + kTitleH, width: kScreenWidth, height: kScreenHeight - KNavgationHeight - kTitleH - KTabBarHeight)
         
         var childs  = [UIViewController]()
-        for _ in 0..<4{
+        childs.append(RecommendViewController())
+        childs.append(GameViewController())
+        childs.append(AmuseViewController())
+        for _ in 0..<1{
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)), CGFloat(arc4random_uniform(255)))
             childs.append(vc)
         }
-        
-        let contentFrame = CGRect(x: 0, y: KNavgationHeight + kTitleH, width: kScreenWidth, height: kScreenHeight - KNavgationHeight - kTitleH - KTabBarHeight)
-        let pageContentView = PageContentView(frame: contentFrame, childVcs: childs, parentVc: self)
+         let pageContentView = PageContentView(frame: contentFrame, childVcs: childs, parentVc: self)
+        pageContentView.delegate = self
         
         return pageContentView
     }()
@@ -84,3 +86,13 @@ extension HomeViewController : pageTitleViewDelegate{
     }
     
 }
+
+// MARK:- 遵守PageContentViewDelegate协议
+extension HomeViewController : PageContentViewDelegate{
+    
+    func pageContentView(_ pageView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
+        titleView.setTitleWithProgress(progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+    
+}
+

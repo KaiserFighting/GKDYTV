@@ -14,7 +14,7 @@ let kScreenWidth  = UIScreen.main.bounds.width
 let kScreenHeight = UIScreen.main.bounds.height
 
 let kIphoneX = UIApplication.shared.statusBarFrame.size.height > 20 ? true : false
-
+let kTitleH : CGFloat = 60
 //let kStatueBarH : CGFloat = 20
 //let kNavigationBarH : CGFloat = kIphoneX ? 68 : 44
 
